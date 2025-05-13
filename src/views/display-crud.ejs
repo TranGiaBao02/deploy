@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Read DB</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Email</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% for(let i=0; i < dataTable.length; i++) { %>
+                <tr>
+                    <td><%= dataTable[i].id %></td>
+                    <td><%= dataTable[i].email %></td>
+                    <td><%= dataTable[i].firstName %></td>
+                    <td><%= dataTable[i].lastName %></td>
+                    <td><%= dataTable[i].address %></td>
+                    <td><%= dataTable[i].phoneNumber %></td>
+                    <td><%= dataTable[i].gender %></td>
+                    <td><a href="/edit-crud?id=<%= dataTable[i].id%>" class="btn-edit" type="button">Edit</a></td>
+                    <td><a href="/delete-crud?id=<%= dataTable[i].id%>" class="btn-delete" type="button">Delete</a></td>
+                </tr>
+        <%  } %>
+        </tbody>
+      </table>
+</body>
+</html>
