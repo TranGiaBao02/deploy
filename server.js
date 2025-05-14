@@ -26,11 +26,13 @@ initWebRoutes(app);
 
 connectDB();
 
-const port = process.env.PORT || 4000 
+let port = process.env.PORT;
 if (!port) {
-    console.error("❌ PORT is not defined in environment variables.");
+    console.error("❌ PORT environment variable not set.");
     process.exit(1);
 }
+
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+    console.log(`✅ Backend Node.js is running on port: ${port}`);
+});
+
