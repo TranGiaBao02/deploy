@@ -1,6 +1,7 @@
 {
   "name": "kltn",
   "version": "1.0.0",
+  "type": "module", 
   "description": "backend nodejs",
   "main": "server.js",
   "scripts": {
