@@ -1,0 +1,111 @@
+// .manage-schedule-container {
+//     .m-s-title{
+//         font-size: 28px;
+//         font-weight: 700;
+//         text-align: center;
+//         color: #343a40; 
+//         text-transform: uppercase;
+//         margin-top: 15px;
+//         margin-bottom: 15px;
+//     }
+//     .pick-hour-container{
+//         padding-top: 20px;
+//         padding-bottom: 20px;
+//         display: flex;
+//         gap: 20px;
+//         flex-wrap: wrap;
+
+//         button{
+//             padding: 5px 15px;
+//             border: 1px solid gray;
+//         }
+//     }
+//     .btn-schedule{
+//         &.active{
+//             background-color: orange;
+//         }
+//     }
+
+//     .btn-save-schedule{
+//         margin-top: 20px
+//     }
+// }
+
+.manage-schedule-container {
+    $primary-color: #ff9800;
+    $text-color: #343a40;
+    $border-color: #ccc;
+    $hover-color: darken($primary-color, 10%);
+    $active-bg: #ffb74d;
+
+    .m-s-title {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        color: $text-color;
+        text-transform: uppercase;
+        margin: 20px 0;
+    }
+
+    .container {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-group {
+        label {
+            font-weight: 600;
+            color: $text-color;
+        }
+
+        .form-control {
+            margin-top: 5px;
+            border-radius: 6px;
+        }
+    }
+
+    .pick-hour-container {
+        padding: 20px 0;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+
+        .btn-schedule {
+            padding: 8px 18px;
+            border: 1px solid $border-color;
+            border-radius: 6px;
+            background-color: white;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: $hover-color;
+                color: white;
+                cursor: pointer;
+            }
+
+            &.active {
+                background-color: $primary-color;
+                color: white;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .btn-save-schedule {
+        margin-top: 25px;
+        padding: 10px 25px;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+}

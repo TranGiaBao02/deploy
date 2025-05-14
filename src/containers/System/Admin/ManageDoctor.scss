@@ -1,0 +1,145 @@
+
+$primary-color: #007bff;
+$primary-hover: #0056b3;
+$warning-color: #ffc107;
+$warning-hover: #e0a800;
+$text-color: #343a40;
+$border-color: #ced4da;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+.manage-doctor-container {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px $shadow-color;
+
+    .manage-doctor-title {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        color: $text-color;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .more-info {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        label {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 8px;
+            text-transform: capitalize;
+        }
+
+        .content-left,
+        .content-right {
+            .form-control {
+                border: 1px solid $border-color;
+                border-radius: 6px;
+                padding: 12px;
+                font-size: 16px;
+                transition: border-color 0.3s, box-shadow 0.3s;
+
+                &:focus {
+                    border-color: $primary-color;
+                    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                }
+            }
+        }
+
+        .content-left {
+            width: 35%;
+        }
+
+        .content-right {
+            width: 65%;
+        }
+    }
+
+    .more-infor-extra {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 30px;
+
+        .form-group {
+            flex: 0 0 31%;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 8px;
+                color: #495057;
+            }
+
+            input,
+            .form-control {
+                padding: 10px;
+                border: 1px solid $border-color;
+                border-radius: 6px;
+                font-size: 16px;
+
+                &:focus {
+                    border-color: $primary-color;
+                    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                }
+            }
+
+            // Select wrapper nếu dùng react-select
+            .select__control {
+                border-color: $border-color;
+                border-radius: 6px;
+                &:hover {
+                    border-color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .manage-doctor-editor {
+        margin-bottom: 30px;
+        border: 1px solid $border-color;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #f8f9fa;
+    }
+
+    .create-content-doctor,
+    .save-content-doctor {
+        margin-top: 20px;
+        width: 45%;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+
+        &.create-content-doctor {
+            background-color: $primary-color;
+
+            &:hover {
+                background-color: $primary-hover;
+                transform: translateY(-2px);
+            }
+        }
+
+        &.save-content-doctor {
+            background-color: $warning-color;
+
+            &:hover {
+                background-color: $warning-hover;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}

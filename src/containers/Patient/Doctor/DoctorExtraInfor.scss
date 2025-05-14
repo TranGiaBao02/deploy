@@ -1,0 +1,103 @@
+$primary-color: #333;
+$link-color: rgb(38, 160, 231);
+$border-color: #ddd;
+$bg-light: #f8f8f8;
+$bg-payment: #eee;
+
+.doctor-extra-infor-container {
+  padding-left: 15px;
+  color: $primary-color;
+
+  .content-up {
+    margin-bottom: 10px;
+
+    .text-address {
+      font-size: 1.25rem;    
+      font-weight: bold;        
+      text-transform: uppercase;
+      background-color: lighten($bg-light, 10%);  
+      border-radius: 4px;   
+      margin-bottom: 10px;   
+    }
+
+    .name-clinic {
+      font-weight: 600;
+      color: #337ab7;
+    }
+    .detail-address {
+      padding: 5px 0;
+      font-weight: 600;
+    }
+  }
+
+  .content-down {
+    .short-infor {
+      .detail {
+        cursor: pointer;
+        color: rgb(38, 160, 231);
+      }
+      .currency {
+        margin: 0 5px;
+      }
+      span {
+        cursor: pointer;
+        margin-left: 5px;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .title-price {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .detail-infor {
+      border: 1px solid $border-color;
+      padding: 10px;
+      background-color: $bg-light;
+      border-radius: 5px;
+
+      .price {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+
+        .left {
+          flex: 1;
+        }
+
+        .right {
+          flex: 1;
+          text-align: right;
+        }
+      }
+    }
+
+    .payment {
+      border: 1px solid $border-color;
+      padding: 10px;
+      background-color: $bg-payment;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .hide-price {
+      margin-top: 10px;
+
+      span {
+        cursor: pointer;
+        color: $link-color;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

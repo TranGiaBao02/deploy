@@ -1,0 +1,32 @@
+// OutStandingDoctor.scss
+
+.section-share {
+    &.section-outstanding-doctor {
+      .section-body {
+        .section-customize {
+          .customize-border {
+            position: relative;
+  
+            .position {
+              position: absolute;
+              bottom: 10px; // Đưa tên bác sĩ lên cao hơn chút
+              left: 50%;
+              transform: translateX(-50%);
+              background: rgba(0, 0, 0, 0.6); // Nền mờ để dễ nhìn
+              color: #fff;
+              font-size: 1rem; // Kích thước chữ vừa phải
+              font-weight: 600; // Làm đậm chữ để nổi bật
+              padding: 8px 16px;
+              border-radius: 5px; // Bo góc để mềm mại
+              text-align: center;
+              max-width: 80%; 
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis; 
+            }
+          }
+        }
+      }
+    }
+  }
+  

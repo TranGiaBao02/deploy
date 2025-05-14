@@ -1,0 +1,75 @@
+.manage-title{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    margin: 20px auto;
+    padding: 10px;
+    width: calc(100% - 100px);
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    background: white;
+  
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    th {
+      background: linear-gradient(to right, #63bfd8, #9fbbdc);
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #f8f9fa; // Nền xen kẽ
+    }
+  
+    tr:hover {
+      background-color: #e9ecef; // Hover nổi bật
+      transition: 0.3s;
+    }
+  
+    td {
+      font-size: 16px;
+      color: #333;
+    }
+  
+    // Nút chỉnh sửa
+    .btn-edit {
+      background: #ffc107;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 6px;
+      transition: 0.3s;
+      
+      &:hover {
+        background: #e0a800;
+      }
+    }
+  
+    // Nút xóa
+    .btn-delete {
+      background: #dc3545;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+  
+      &:hover {
+        background: #c82333;
+      }
+    }
+  }
+  

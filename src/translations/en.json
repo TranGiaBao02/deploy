@@ -1,0 +1,196 @@
+{
+    "home-header": {
+        "speciality": "Medical Specialty",
+        "search-doctor": "Find a doctor by specialty",
+        "health-facility": "Health Facility",
+        "select-room": "Select hospital or clinic",
+        "doctor": "Doctor",
+        "select-doctor": "Select a skilled doctor",
+        "fee": "Medical Package",
+        "check-health": "General health check-up",
+        "support": "Support",
+        "welcome": "Welcome, "
+    },
+    "banner":{
+        "title1": "MEDICAL PLATFORM",
+        "title2": "COMPREHENSIVE HEALTHCARE",
+        "specialist-examination": "Specialist Examination",
+        "telemedicine": "Remote Consultation",
+        "general-examination": "General Examination",
+        "medical-testing": "Medical Testing",
+        "mental-health": "Mental Health",
+        "dental-examination": "Dental Examination"
+    },
+    "menu": {
+        "admin": {
+            "manage-user": "Users System",
+            "manage-doctor": "Manage Doctors",
+            "manage-admin": "Manage Admins",
+            "crud-user": "CRUD User",
+            "crud-redux": "Manage Users",
+            "clinic": "Clinics",
+            "manage-clinic": "Manage Clinics",
+            "specialty": "Specialties",
+            "manage-specialty": "Manage Specialties",
+            "handbook": "Handbook",
+            "manage-handbook": "Manage Handbook",
+            "infor-user": "Infor User"
+        },
+        "doctor": {
+            "manage-schedule": "Manage Doctor's Schedule",
+            "manage-patient": "Manage Doctor's Patient"
+        }
+
+    },
+    "manage-user": {
+        "add": "Add A New User",
+        "title": "User Management   ",
+        "email": "Email",
+        "password": "Password",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "address": "Address",
+        "phone": "Phone",
+        "gender": "Gender",
+        "position": "Position",
+        "role": "Role",
+        "image": "Profile Picture",
+        "save": "Save",
+        "edit": "Edit",
+        "action": "Action",
+        "title-table": "User Information Management",
+        "doctor-admin": "Doctor & Admin",
+        "patient": "Patient"
+    },
+    "manage-clinic": {
+        "title": "Clinic Management",
+        "name-clinic": "Clinic Name",
+        "pic-clinic": "Clinic Image",
+        "address-clinic": "Clinic Address",
+        "save": "Save Information",
+        "name": "Name",
+        "address": "Address",
+        "action": "Action",
+        "edit": "Edit",
+        "delete": "Delete"
+    },
+    "manage-specialty": {
+        "title": "Specialty Management",
+        "name-specialty": "Specialty Name",
+        "pic-specialty": "Specialty Image",
+        "note": "No specialties found",
+        "save": "Save Information",
+        "name": "Name",
+        "address": "Address",
+        "action": "Action",
+        "edit": "Edit",
+        "delete": "Delete",
+        "update": "Update Infor"
+    },
+    "user-infor": {
+        "title": "Personal Information",
+        "email": "Email:",
+        "fullName": "Full Name:",
+        "address": "Address:",
+        "phone": "Phone Number:",
+        "position": "Position",
+        "role": "Role",
+        "save": "Save",
+        "edit": "Save Changes",
+        "image": "No image available"
+    },
+    "manage-patient": {
+        "title": "Patient Appointment Management",
+        "select-date": "Select Appointment Date",
+        "ord": "No.",
+        "time": "Time",
+        "fullName": "Full Name",
+        "email": "Email",
+        "address": "Address",
+        "gender": "Gender",
+        "paymentMethod": "Payment Method",
+        "paymentStatus": "Payment Status",
+        "action": "Action",
+        "submit": "Confirm"
+      }
+      ,
+    "homepage": {
+        "outstanding-doctor": "Last week's featured doctor",
+        "more-infor": "More Infor",
+        "specialty-popular": "Popular Specialty",
+        "medical-facility-popular": "Popular Medical Facility",
+        "search": "Search"
+    },
+    "manage-schedule": {
+        "title": "Manage Doctor's Examination Plan",
+        "select-doctor": "Select Doctor",
+        "doctor-name": "Name",
+        "select-date": "Select Date",
+        "save": "Save Information"
+    },
+    "patient": {
+        "detail-doctor": {
+            "schedule": "Schedule",
+            "no-schedule": "The doctor doesn't have an examination plan for this day",
+            "choose": "Choose",
+            "book-free": " and book (free)"
+        },
+        "extra-infor-doctor":{
+            "text-address": "Address of examination",
+            "price": "Examination price:",
+            "detail": "See details",
+            "payment": "The patient can pay the cost in the form of:",
+            "hide-price": "Hide price list"
+        },
+        "booking-modal": {
+            "title": "Information to book a medical appointment",
+            "fullName": "Fullname",
+            "phoneNumber": "Phone number",
+            "email": "Email",
+            "address": "Address",
+            "reason": "Reasons for medical examination",
+            "birthday": "Date of birth",
+            "gender": "Gender",
+            "btnConfirm": "Confirm",
+            "btnCancel": "Cancel",
+            "priceBooking": "Free booking",
+            "price": "Price: "
+        }
+    },
+    "admin":{
+        "manage-doctor": {
+            "title": "Create more information for doctors",
+            "select-doctor": "Select doctor",
+            "intro": "Introduction",
+            "add": "Create infor",
+            "save": "Save infor",
+            "price": "Price",
+            "payment": "Payment",
+            "province": "Province",
+            "nameClinic": "Clinic's name",
+            "addressClinic": "Clinic's address",
+            "note": "Note",
+            "specialty": "Specialty",
+            "select-clinic": "Clinic"
+        }
+    },
+    "doctor": {
+        "manage-patient": {
+            "select-date": "Select Date",
+            "ordinalNum": "Ord",
+            "time": "Date",
+            "address": "Address",
+            "gender": "Gender",
+            "action": "Actions",
+            "note": "No patients!",
+            "submit": "Submit",
+            "invoice": "Send invoice"
+        }
+    },
+    "email": {
+        "verify-email": {
+            "price":"Price: "
+        }
+    }
+
+}

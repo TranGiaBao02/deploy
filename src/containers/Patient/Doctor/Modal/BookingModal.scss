@@ -1,0 +1,147 @@
+.booking-modal-container {
+  padding-top    : 50px;
+  justify-content: center;
+  align-items    : flex-start;
+  min-height     : 100vh;
+
+  .booking-modal-content {
+    background-color: #fff;
+    border-radius   : 8px;
+    overflow        : hidden;
+    box-shadow      : 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .booking-modal-header {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    padding         : 16px;
+    background-color: #f5f5f5;
+    border-bottom   : 1px solid #ddd;
+
+    .left {
+      font-size  : 1.2rem;
+      font-weight: bold;
+    }
+
+    .right {
+      font-size : 1.5rem;
+      cursor    : pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #f00;
+      }
+    }
+  }
+
+  .booking-modal-body {
+    padding: 16px;
+
+    .doctor-infor {
+      margin-bottom: 16px;
+    }
+
+    .price {
+      font-size    : 1.1rem;
+      font-weight  : bold;
+      margin-bottom: 16px;
+    }
+
+    .row {
+      display  : flex;
+      flex-wrap: wrap;
+      margin   : 0 -8px;
+
+      .form-group {
+        padding      : 0 8px;
+        margin-bottom: 16px;
+        width        : 100%;
+
+        @media (min-width: 576px) {
+          width: 50%;
+        }
+
+        label {
+          display      : inline-block;
+          margin-bottom: 6px;
+          font-weight  : 600;
+          font-size    : 0.95rem;
+          color        : #333;
+          transition   : color 0.3s ease;
+          position     : relative;
+
+          &.required::after {
+            content    : "*";
+            color      : red;
+            margin-left: 4px;
+            font-size  : 1rem;
+          }
+
+          &::after {
+            content    : ":";
+            margin-left: 4px;
+            color      : #555;
+          }
+
+          // Hiệu ứng khi input được focus
+          .form-control:focus+& {
+            color: #007bff;
+          }
+        }
+
+        .form-control {
+          width        : 100%;
+          padding      : 8px 12px;
+          border       : 1px solid #ccc;
+          border-radius: 4px;
+          font-size    : 1rem;
+          transition   : border-color 0.3s ease;
+
+          &:focus {
+            border-color: #80bdff;
+            outline     : none;
+            box-shadow  : 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          }
+        }
+      }
+    }
+  }
+
+  .booking-modal-footer {
+    padding   : 16px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  
+    .btn-booking-confirm {
+      background-color: #28a745;
+      color           : #fff;
+      border          : none;
+      padding         : 10px 20px;
+      font-size       : 1rem;
+      border-radius   : 4px;
+      cursor          : pointer;
+      transition      : background-color 0.3s ease;
+  
+      &:hover {
+        background-color: darken(#28a745, 5%);
+      }
+    }
+  
+    .btn-booking-cancel {
+      background-color: #dc3545;
+      color           : #fff;
+      border          : none;
+      padding         : 10px 20px;
+      font-size       : 1rem;
+      border-radius   : 4px;
+      cursor          : pointer;
+      margin-left     : 10px;
+      transition      : background-color 0.3s ease;
+  
+      &:hover {
+        background-color: darken(#dc3545, 5%);
+      }
+    }
+  }
+}

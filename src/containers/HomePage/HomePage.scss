@@ -1,0 +1,202 @@
+.slick-prev,
+.slick-next {
+    width          : 44px !important;
+    height         : 48px !important;
+    border-radius  : 6px;
+    border         : 2px solid #ccc !important;
+    background     : #fff !important;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    transition     : all 0.3s ease-in-out;
+}
+
+.slick-prev {
+    left   : -22px !important;
+    z-index: 1000;
+}
+
+.slick-next {
+    right: -20px !important;
+}
+
+.slick-disabled {
+    display: none !important;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background  : #f1f1f1 !important;
+    border-color: #999 !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-family: "FontAwesome" !important;
+    font-size  : 18px;
+    color      : #333;
+    transition : color 0.3s ease-in-out;
+}
+
+.slick-prev:hover::before,
+.slick-next:hover::before {
+    color: #555;
+}
+
+.slick-prev::before {
+    content: "\f104" !important;
+}
+
+.slick-next::before {
+    content: "\f105" !important;
+}
+
+//----------------------------------
+.section-share {
+    &.section-specialty {
+        background: #f5f5f5;
+    }
+
+    &.section-outstanding-doctor {
+        background: #f5f5f5;
+    }
+
+    &.section-about {
+        height       : 500px !important;
+    }
+
+    .section-body {
+        .section-customize {
+            .bg-image {
+                width              : 310px;
+                height             : 170px;
+                background-position: center center;
+                background-repeat  : no-repeat;
+                background-size    : cover;
+                background-color   : #eee;
+
+                &.section-spectialy {
+                    // background-image: url("../../assets/images/specialty/co-xuong-khop.jpg");
+                }
+
+                &.section-medical-facility {
+                    // background-image: url("../../assets/images/medical-facility/benh-vien-thu-cuc-1.jpg");
+                }
+
+                &.section-outstanding-doctor {
+                    width           : 120px;
+                    height          : 120px;
+                    border-radius   : 50%;
+                }
+
+                &.section-handbook {
+                    background-image: url("../../assets/images/handbook/105523-chuyen-gia-tham-van-tu-van-tam-ly-hon-nhan-gia-dinh-uy-tin.jpg");
+                }
+            }
+        }
+    }
+}
+
+//--------------------------------
+.section-share {
+    height    : 330px;
+    background: #f5f5f5;
+
+    .section-container {
+        margin        : 0 100px;
+        display       : flex;
+        flex-direction: column;
+
+        .section-header {
+            height       : 60px;
+            padding-top  : 10px;
+
+            .title-section {
+                font-size  : 24px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                float         : right;
+                padding       : 10px 15px;
+                display       : block;
+                border        : none;
+                outline       : none;
+                background    : #ebebeb;
+                color         : black;
+                cursor        : pointer;
+                text-transform: uppercase;
+
+                &:hover {
+                    color     : #fff;
+                    background: #f7d800;
+                }
+            }
+        }
+
+        // .section-body{
+        //     .specialty-customize{
+        //         .bg-image{
+        //             width: 310px;
+        //             height: 170px;
+        //             background-position: center center;
+        //             background-repeat: no-repeat;
+        //             background-size: cover;
+        //             background-color: #eee;
+
+        //         }
+        //     }
+        // }
+    }
+}
+
+.section-outstanding-doctor {
+    .outer-bg {
+        display        : flex;
+        justify-content: center;
+        margin-bottom  : 10px;
+    }
+
+    .section-customize {
+        padding: 5px;
+        .customize-border {
+            cursor: pointer;
+
+            border : 1px solid black;
+            padding: 20px;
+            border-radius: 1rem;
+        }
+    }
+}
+
+.section-about {
+    padding: 0 100px;
+
+    .section-about-header {
+        padding    : 20px 10px;
+        font-size  : 22px;
+        font-weight: 600;
+        border-top   : 1px solid gray;
+    }
+
+    .section-about-content {
+        display: flex;
+        gap    : 15px;
+        width  : 100%;        
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        .content-left {
+            width: 60%;
+        }
+
+        .content-right {
+            width: 40%;
+
+            p {
+                text-align: justify;
+                font-style: italic;
+                padding   : 10px;
+            }
+        }
+    }
+}
